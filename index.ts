@@ -18,6 +18,5 @@ const progress$ = scroll$.pipe(
 );
 
 progress$.subscribe((percent) => {
-  console.log({ percent });
   progressBar.style.width = `${percent}%`;
 });
